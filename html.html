@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>旋转小方块</title>
+        <link rel="stylesheet" href="css.css">
+</head>
+<body>
+        <div class="wrapper">
+                <div class="item1"></div>
+                <div class="move1"><img src="img/1.png" alt=""></div>
+                <div class="item2"></div>
+                <div class="move2"><img src="img/2.png" alt=""></div>
+                <div class="item3"></div>
+                <div class="move3"><img src="img/3.png" alt=""></div>
+                <div class="item4"></div>
+                <div class="move4"><img src="img/4.png" alt=""></div>
+                <div class="item5"></div>
+                <div class="move5"><img src="img/5.png" alt=""></div>
+                <div class="item6"></div>
+                <div class="move6"><img src="img/6.png" alt=""></div>
+        </div>
+        <script>
+                var wra = document.getElementsByClassName('wrapper')[0];
+                var move1 = document.getElementsByClassName('move1')[0];
+                var move2 = document.getElementsByClassName('move2')[0];
+                var move3 = document.getElementsByClassName('move3')[0];
+                var move4 = document.getElementsByClassName('move4')[0];
+                var move5 = document.getElementsByClassName('move5')[0];
+                var move6 = document.getElementsByClassName('move6')[0];
+                console.log(move5);
+                var key = true;
+                wra.onmouseenter = function(e){
+                        // wra.style.animationPlayState = 'paused';
+                        move1.style.animation = 'move1 2s linear infinite';
+                        move2.style.animation = 'move2 2s linear infinite';
+                        move3.style.animation = 'move3 2s linear infinite';
+                        move4.style.animation = 'move4 2s linear infinite';
+                        move5.style.animation = 'move5 2s linear infinite';
+                        move6.style.animation = 'move6 2s linear infinite';
+                  
+                }
+                wra.onmouseleave = function(e){
+                        // wra.style.animationPlayState = 'paused';
+                        move1.style.animation = '';
+                        move2.style.animation = '';
+                        move3.style.animation = '';
+                        move4.style.animation = '';
+                        move5.style.animation = '';
+                        move6.style.animation = '';
+                }
+        </script>
+</body>
+</html>
